@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-21 10:33:34.728820",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_advance_payments_account",
+  "supplier_advance_payments_account",
+  "expense_debit_account",
+  "column_break_sckav",
+  "third_party_insurance_account",
+  "insurance_account_with_others",
+  "column_break_i06bn",
+  "revenue_account",
+  "subcontractor_operations_costs_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_advance_payments_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Advance Payments Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier_advance_payments_account",
+   "fieldtype": "Link",
+   "label": "Supplier Advance Payments Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sckav",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "third_party_insurance_account",
+   "fieldtype": "Link",
+   "label": "Third party insurance account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_account_with_others",
+   "fieldtype": "Link",
+   "label": "Insurance account with others",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_i06bn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revenue_account",
+   "fieldtype": "Link",
+   "label": "Revenue account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subcontractor_operations_costs_account",
+   "fieldtype": "Link",
+   "label": "Subcontractor operations costs Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_debit_account",
+   "fieldtype": "Link",
+   "label": "Expense Debit Account",
+   "options": "Account",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-31 12:16:35.437507",
+ "modified_by": "Administrator",
+ "module": "Contracting",
+ "name": "Contracting Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
