@@ -47,7 +47,7 @@ frappe.ui.form.on('Quotation', {
 		frm.trigger("set_dynamic_field_label");
 
 		if (frm.doc.from_tender && frm.doc.docstatus == 1 ){
-			frm.add_custom_button(__("Contract Owner"), () => {
+			frm.add_custom_button(__("Contract"), () => {
 				frappe.call({
 					args:{
 						doc:frm.doc
@@ -58,40 +58,40 @@ frappe.ui.form.on('Quotation', {
 					
 					}
 				});
-			}, __('Create Contract'))
+			}, __('Create'))
 
-			frm.add_custom_button(__("Contract Subcontractor"), () => {
+			// frm.add_custom_button(__("Contract Subcontractor"), () => {
 
-				let items = []
+			// 	let items = []
 		
-				frm.doc.tender_items.forEach(function(row) {
-					items.push({
-						"is_group": row.is_group,
-						"status": row.status,
-						"series":row.series,
-						"contracting_item_group": row.contracting_item_group,
-						"contracting_item": row.contracting_item,
-						"uom":row.uom,
-						"qty": row.qty,
-						"rate": row.rate,
-						"description": row.description
+			// 	frm.doc.tender_items.forEach(function(row) {
+			// 		items.push({
+			// 			"is_group": row.is_group,
+			// 			"status": row.status,
+			// 			"series":row.series,
+			// 			"contracting_item_group": row.contracting_item_group,
+			// 			"contracting_item": row.contracting_item,
+			// 			"uom":row.uom,
+			// 			"qty": row.qty,
+			// 			"rate": row.rate,
+			// 			"description": row.description
 
 		
-					});
-				});
+			// 		});
+			// 	});
 		
-				frappe.model.open_mapped_doc({
-				method: "contracting.utilis.create_subcontractor",
-				frm: cur_frm,
-				args: {
-					"supplier": frm.doc.supplier,
-					"project":frm.doc.project,
-					"name":frm.doc.name,
-					"item": items,
+			// 	frappe.model.open_mapped_doc({
+			// 	method: "contracting.utilis.create_subcontractor",
+			// 	frm: cur_frm,
+			// 	args: {
+			// 		"supplier": frm.doc.supplier,
+			// 		"project":frm.doc.project,
+			// 		"name":frm.doc.name,
+			// 		"item": items,
 					
-				}
-			})
-			}, __('Create Contract'))
+			// 	}
+			// })
+			// }, __('Create Contract'))
 
 
 

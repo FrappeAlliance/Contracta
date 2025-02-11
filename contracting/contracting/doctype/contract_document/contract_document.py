@@ -365,8 +365,9 @@ class ContractDocument(SellingController):
         pass
 
     def before_update_after_submit(self):
-        self.validate_drop_ship()
-        self.validate_supplier_after_submit()
+        pass
+        # self.validate_drop_ship()
+        # self.validate_supplier_after_submit()
         #self.validate_delivery_date()
 
     def validate_supplier_after_submit(self):

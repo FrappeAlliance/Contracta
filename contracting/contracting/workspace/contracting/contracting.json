@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"594yL6PlJ_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Contracting</span>\",\"col\":12}},{\"id\":\"3ht8Ocu6qq\",\"type\":\"card\",\"data\":{\"card_name\":\"Contracting Documents\",\"col\":4}},{\"id\":\"NuliArDeVz\",\"type\":\"card\",\"data\":{\"card_name\":\"Selling\",\"col\":4}},{\"id\":\"USZ3z4zWFW\",\"type\":\"card\",\"data\":{\"card_name\":\"Purchases\",\"col\":4}},{\"id\":\"FrKPhBlx4B\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}}]",
+ "content": "[{\"id\":\"594yL6PlJ_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Contracting</span>\",\"col\":12}},{\"id\":\"3ht8Ocu6qq\",\"type\":\"card\",\"data\":{\"card_name\":\"Contracting Documents\",\"col\":4}},{\"id\":\"NuliArDeVz\",\"type\":\"card\",\"data\":{\"card_name\":\"Selling\",\"col\":4}},{\"id\":\"USZ3z4zWFW\",\"type\":\"card\",\"data\":{\"card_name\":\"Purchases\",\"col\":4}},{\"id\":\"FrKPhBlx4B\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"L2o5M8uVC6\",\"type\":\"card\",\"data\":{\"card_name\":\"Installations\",\"col\":4}}]",
  "creation": "2024-08-21 18:28:01.722904",
  "custom_blocks": [],
  "docstatus": 0,
@@ -206,9 +206,28 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Installations",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Installation Note",
+   "link_count": 0,
+   "link_to": "Installation Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-08-21 19:58:58.260528",
+ "modified": "2025-01-21 07:07:29.705783",
  "modified_by": "Administrator",
  "module": "Contracting",
  "name": "Contracting",

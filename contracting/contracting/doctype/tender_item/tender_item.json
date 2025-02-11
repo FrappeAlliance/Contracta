@@ -19,7 +19,11 @@
   "amount",
   "description",
   "costing_note",
-  "prevdoc_docname"
+  "prevdoc_docname",
+  "section_break_euxw",
+  "completion_percentage",
+  "column_break_yntd",
+  "invoiced_amount"
  ],
  "fields": [
   {
@@ -122,12 +126,33 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Description"
+  },
+  {
+   "fieldname": "section_break_euxw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "completion_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Completion Percentage"
+  },
+  {
+   "fieldname": "column_break_yntd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "invoiced_amount",
+   "fieldtype": "Currency",
+   "label": "Invoiced Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-08-22 00:11:29.952975",
+ "modified": "2025-01-21 07:52:17.219460",
  "modified_by": "Administrator",
  "module": "Contracting",
  "name": "Tender Item",
