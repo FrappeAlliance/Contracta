@@ -81,12 +81,13 @@ frappe.ui.form.on("Contract Document", {
 	frm.add_custom_button(__("Create Sales Invoice"), () => {
 		let items = []
 		let taxes = []
-	
+		
 		frm.doc.items.forEach(function(row) {
 			items.push({
 				"item_code": row.contracting_item,
 				"row_name": row.name,
-				"rate": row.rate,
+				"rate": (row.amount * (row.completion_percentage/100)) - row.invoiced_amount,
+				"invoiced_amount": row.invoiced_amount,
 				"qty":row.remaining_qty,
 				"description": row.description
 
